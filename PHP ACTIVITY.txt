@@ -1,0 +1,17 @@
+PHP ACTIVITY
+
+to familiarize the function
+
+Create a function code
+
+1. A function to check if a Number is Positive or Negative
+2. A function to convert temperature from Celsius to Fahrenheit and Fahrenheit to Celsius.
+3. A function reads in a number and checks if it is odd or even.
+4. A function that prints out the biggest of three inputted numbers.
+5. A function that prints out the word “honor” if the number input is 70; if the number is less than 40, print out the word “fail," otherwise print out the word “pass.”.
+6. A function that will calculate a running sum. A user will enter numbers that will be added to the sum, and when a negative number is encountered, stop adding numbers and write out the final result.
+7. A function that reads two values determines the largest value and prints the largest value with an identifying message
+8. A function that gets two numbers from the user (dividend and divisor), ensures the divisor is not zero, and displays their quotient:
+9. A function reads an employee name (NAME). Overtime hours worked (OVERTIME), hours absent (ABSENT) and
+Determine the bonus payment (PAYMENT) to calculate the bonus
+10. A function that calculates the Fibonacci sequence up to a given limit n.
