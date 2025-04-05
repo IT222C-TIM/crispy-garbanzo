@@ -6,39 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-    include 'function.php';
-
-    writemessage();
-
-    echo "<hr>";
+    <?php include 'function.php';
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $n = $_POST['limit'];
+        $sequence = fibonacci($n);
+    }
     
-    familyName("Jani");
-    familyName("Hege");
-    familyName("Stale");
-    familyName("Kai Jim");
-    familyName("Borge");
-
-    echo "<hr>";
-    
-    familybday("Hege","1975");
-    familybday("Stale","1978");
-    familybday("Kai Jim","1983");
-
-    echo "<hr>";
-
-    setHeight(350);
-    setHeight();
-    setHeight(135);
-    setHeight(80);
+    ?>
 
 
-    echo "<hr>";
-
-    echo "5 + 10 =".sum(5,10)."<br>";
-    echo "7 + 13 =".sum(7,13)."<br>";
-    echo "2 + 4 =".sum(2,4)."<br>";
-
+    <form method="POST" action="">
+        <label for="limit">Enter the limit (n):</label>
+        <input type="number" name="limit" required><br><br>
+        <input type="submit" value="Generate Fibonacci Sequence">
+    </form>
+    <?php
+    echo "Fibonacci Sequence up to $n terms: <br>";
+    echo implode(", ", $sequence);
     ?>
 </body>
 </html>
